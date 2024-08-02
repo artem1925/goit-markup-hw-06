@@ -389,54 +389,68 @@ img {
 /*block 1*/
 
 .block-one {
-  padding: 188px 0;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  max-width: 320px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #2e2f42;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/bg.jpg);
-  margin: auto;
-  max-width: 1440px;
-  max-height: 600px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    url(../images/block-one/block-one-img-mob.jpg);
+  margin-left: auto;
+  margin-right: auto;
 }
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .block-one {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images//block-one/block-one-img-mob@2x.jpg);
+  }
+}
+
 .block-one-container {
   margin: 0 auto;
 }
 
 .hhh {
-  font-family: "Roboto", sans-serif;
+  max-width: 216px;
   font-weight: 700;
-  font-size: 56px;
-  line-height: 107%;
-  letter-spacing: 0.02em;
+  font-size: 36px;
+  line-height: 1.11;
   text-align: center;
   color: #fff;
-  margin: 0 auto;
-  margin-bottom: 48px;
-  max-width: 496px;
-  max-height: 120px;
   align-items: center;
+  text-transform: capitalize;
+  margin-right: auto;
+  margin-bottom: 72px;
+  margin-left: auto;
 }
 
 .button-one {
   font-family: "Roboto", sans-serif;
-  cursor: pointer;
+  margin: 0 auto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
-  background: #4d5ae5;
+  background-color: #4d5ae5;
   border-radius: 4px;
   display: block;
-  margin: 0 auto;
   text-align: center;
   min-width: 169px;
   height: 56px;
   border: none;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-one:hover {
@@ -445,6 +459,65 @@ img {
 .button-one:focus {
   background: #404bbf;
 }
+
+@media screen and (min-width: 768px) {
+  .block-one {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    max-width: 768px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/block-one/block-one-img-tab.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .block-one {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/block-one/block-one-img-tab@2x.jpg);
+    }
+  }
+
+  .hhh {
+    max-width: 496px;
+    line-height: 1.07;
+    font-size: 56px;
+    margin-bottom: 36px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .block-one {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/block-one/block-one-img-desk.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/block-one/block-one-desk@2x.jpg);
+    }
+  }
+
+  .hhh {
+    margin-bottom: 48px;
+  }
+}
+
 /*block 2*/
 /*list of advantages*/
 
